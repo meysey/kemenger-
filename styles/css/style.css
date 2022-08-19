@@ -1,0 +1,236 @@
+/* BOOTSTRAP SETTINGS SECTION 
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: .625rem;
+}
+
+.row, .row > * {
+  --bs-gutter-x: 1.25rem;
+}
+
+/* USER VARIABLES SECTION */
+/* FONTS LOAD SECTION */
+@font-face {
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+  font-family: "roboto-st";
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2");
+  font-family: "roboto-st";
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+  font-family: "roboto-st";
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2");
+  font-family: "roboto-st";
+  font-weight: 700;
+  font-style: italic;
+}
+/* GENERAL CSS SETTINGS */
+body {
+  background-color: #fff;
+  font-family: 'Commissioner', sans-serif;
+}
+
+/* USER STYLES */
+.wrap {
+  min-width: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 108px;
+}
+.header__inner-block {
+  align-items: center;
+  display: flex;
+}
+.header__inner-img {
+  display: inline;
+}
+
+.header__tel {
+  margin-left: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #000;
+  z-index: 2;
+}
+
+.nav__list-item {
+  display: inline;
+  margin-right: 40px;
+}
+.nav__list-item:first-child {
+  margin-left: 101px;
+}
+.nav__list-item:last-child {
+  margin-right: 0;
+}
+.nav__list-item a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section__intro {
+  background: url(../../img/main/intro/intro__img-2.png) no-repeat;
+  background-position: top 0 right 460px;
+}
+
+.intro__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.intro__inner-title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 59px;
+  color: #000;
+  margin-bottom: 44px;
+  margin-top: 156px;
+}
+.intro__inner-title .celect {
+  color: #018FA3;
+}
+.intro__inner-desc {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #000;
+  margin-bottom: 44px;
+}
+.intro__inner-button {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000;
+  background: #FAE01A;
+  box-shadow: 10px 0 100px 0 #FAE01A;
+  border-radius: 30px;
+  padding: 19px 43px 21px 45px;
+  margin-bottom: 215px;
+}
+.intro__inner-img {
+  position: absolute;
+  top: -148px;
+  left: 683px;
+  z-index: 1;
+}
+
+.section__about {
+  margin-top: 127px;
+}
+
+.about__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.about__inner-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 83px;
+}
+.about__inner-item:last-child {
+  margin-bottom: 107px;
+}
+.about__inner-box {
+  position: relative;
+}
+.about__inner-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #000;
+}
+.about__inner-bg--first {
+  position: absolute;
+  left: -60px;
+  top: -75px;
+  z-index: -1;
+  min-width: 547px;
+  min-height: 256px;
+}
+.about__inner-bg--second {
+  position: absolute;
+  min-width: 507px;
+  min-height: 243px;
+  top: -20px;
+  right: -100px;
+  z-index: -1;
+}
+.about__inner-img--first {
+  position: relative;
+  right: -220px;
+}
+.about__inner-img--second {
+  position: relative;
+  left: -220px;
+}
+
+.direc__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.direc__inner-item--1, .direc__inner-item--2, .direc__inner-item--3, .direc__inner-item--4 {
+  display: flex;
+  justify-content: space-between;
+  min-width: 1200px;
+  text-align: center;
+}
+.direc__inner-item--1 {
+  padding: 0 213px;
+}
+.direc__inner-item--2 {
+  padding: 0 117px;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+}
+.direc__inner-item--3 {
+  padding: 0 213px;
+  position: absolute;
+  top: 400px;
+}
+.direc__inner-item--4 {
+  align-self: center;
+  flex-direction: column;
+  position: absolute;
+  top: 500px;
+}
+.direc__inner-img {
+  display: inline-block;
+}
+.direc__inner-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #000;
+}
