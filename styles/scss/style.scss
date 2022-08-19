@@ -1,0 +1,214 @@
+/* BOOTSTRAP SETTINGS SECTION 
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
+.row, .row > * { --bs-gutter-x: 1.25rem; }
+
+/* USER VARIABLES SECTION */
+
+@mixin df($f,$sb,$c){
+	display: $f;
+	justify-content: $sb;
+	align-items: $c;
+}
+
+@mixin txt($fz,$fw,$lh,$c){
+	font-size:$fz;
+	font-weight: $fw;
+	line-height: $lh;
+	color: $c;
+}
+
+/* FONTS LOAD SECTION */
+@font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); 
+	font-family: "roboto-st"; font-weight: 400; font-style: normal; }
+
+@font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); 
+	font-family: "roboto-st"; font-weight: 400; font-style: italic; }
+
+@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+	 font-family: "roboto-st"; font-weight: 700; font-style: normal; }
+
+@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family:
+	 "roboto-st"; font-weight: 700; font-style: italic; }
+
+/* GENERAL CSS SETTINGS */
+body {
+	background-color: #fff;
+	font-family: 'Commissioner', sans-serif;
+}
+/* USER STYLES */
+
+.wrap{
+	min-width: 100vh;
+	min-height: 100vh;
+	overflow: hidden
+}
+
+.header__inner{
+	@include df(flex,space-between,center);
+	min-height: 108px;
+	&-block{
+	align-items: center;
+	display: flex;
+	}
+	&-img{
+	display: inline;
+	}
+}
+
+.header__tel{
+	margin-left: 8px;
+	@include txt (18px,600,22px,#000);
+	z-index: 2;
+}
+
+.nav__list {
+	&-item{
+		display: inline;
+		margin-right: 40px;
+		&:first-child{
+			margin-left: 101px;
+		} 
+		&:last-child{
+			margin-right: 0;
+		}
+		& a{
+			@include txt (16px,500,20px,#000);
+		}
+	}
+}
+// INTRO
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.section__intro{
+	background: url(../../img/main/intro/intro__img-2.png) no-repeat;
+	background-position: top 0 right 460px;
+}
+
+.intro__inner{
+	@include df(flex,space-between,center);
+	position: relative;
+	&-title{
+		@include txt (48px,600,59px,#000);
+		margin-bottom: 44px;
+		margin-top: 156px;
+		& .celect{
+			color: #018FA3
+		}
+	}
+	&-desc{
+		@include txt (24px,400,29px,#000);
+		margin-bottom: 44px;
+	}
+	&-button{
+		@include txt (20px,500,24px,#000);
+		background: #FAE01A;
+		box-shadow: 10px 0 100px 0 #FAE01A;
+		border-radius: 30px;
+		padding: 19px 43px 21px 45px;
+		margin-bottom: 215px;
+	}
+	&-img{
+		position: absolute;
+		top: -148px;
+		left: 683px;
+		z-index: 1;
+	}
+}
+
+// INTRO END
+
+// ABOUT START
+
+.section__about{
+	margin-top: 127px;
+}
+
+.about__inner{
+	@include df(flex,space-between,center);
+	flex-direction: column;
+	&-item{
+		@include df(flex,space-between,center);
+		margin-bottom: 83px;
+		&:last-child{
+			margin-bottom: 107px;
+		}
+	}
+	&-box{
+		position: relative;
+	}
+	&-text{
+		@include txt (24px,400,29px,#000);
+	}
+	&-bg--first{
+		position: absolute;
+		left: -60px;
+		top: -75px;
+		z-index: -1;
+		min-width: 547px;
+		min-height: 256px;
+	}
+	&-bg--second{
+		position: absolute;
+		min-width: 507px;
+		min-height: 243px;
+		top: -20px;
+		right: -100px;
+		z-index: -1;
+	}
+	&-img--first{
+		position: relative;
+		right: -220px;
+	}
+	&-img--second{
+		position: relative;
+		left: -220px;
+	}
+}
+
+// ABOUT END
+
+// DIREC START
+.direc__inner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	&-item--1, &-item--2, &-item--3, &-item--4{
+		display: flex;
+		justify-content: space-between;
+		min-width: 1200px;
+		text-align: center;
+	}
+	&-item--1{
+		padding: 0 213px;
+	}
+	&-item--2{
+		padding: 0 117px;
+		align-items: center;
+		position: absolute;
+		top: 80px;
+	}
+	&-item--3{
+		padding: 0 213px;
+		position: absolute;
+		top: 400px;
+	}
+	&-item--4{
+		align-self: center;
+		flex-direction: column;
+		position: absolute;
+		top: 500px;
+	}
+	&-img{
+		display: inline-block;
+	}
+	&-title{
+		@include txt (24px,400,29px,#000);
+	}
+}
+
