@@ -198,6 +198,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-bottom: 600px;
 }
 .direc__inner-item--1, .direc__inner-item--2, .direc__inner-item--3, .direc__inner-item--4 {
   display: flex;
@@ -233,4 +234,114 @@ body {
   font-weight: 400;
   line-height: 29px;
   color: #000;
+}
+
+.section__catalog {
+  background-color: #F6FAFF;
+  width: 100%;
+}
+
+.catal__inner {
+  background-color: #F6FAFF;
+}
+
+.catalog__title {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 59px;
+  color: #000;
+  text-align: center;
+  padding: 68px 0;
+}
+
+.catal__slider {
+  display: flex;
+}
+.catal__slider-item--blue, .catal__slider-item--violon, .catal__slider-item--green, .catal__slider-item--yellow, .catal__slider-item--pink, .catal__slider-item--orange {
+  box-shadow: 0px 52px 34px -27px rgba(225, 225, 225, 0.15);
+  border-radius: 30px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.slider-item__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #fff;
+  border-radius: 30px 30px 0px 0px;
+  padding: 25px 99px;
+}
+.slider-item__title--blue {
+  background-color: #018FA3;
+}
+.slider-item__title--violon {
+  background-color: #955DEA;
+}
+.slider-item__title--green {
+  background-color: #4ECA30;
+}
+.slider-item__title--yellow {
+  background-color: #FFE41B;
+}
+.slider-item__title--pink {
+  background-color: #FF4C94;
+}
+.slider-item__title--orange {
+  background-color: #FFA724;
+}
+
+.slider-item__price {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 59px;
+  color: #000;
+  text-transform: uppercase;
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+
+.slider-item__desc {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.slider-item__skills > p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.slider__item-button {
+  padding: 20px 60px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  color: #fff;
+  border-radius: 40px;
+}
+.slider__item-button--blue {
+  background: #018FA3;
+}
+.slider__item-button--violon {
+  background: #955DEA;
+}
+.slider__item-button--green {
+  background: #4ECA30;
+}
+.slider__item-button--yellow {
+  background: #FFE41B;
+}
+.slider__item-button--pink {
+  background: #FF4C94;
+}
+.slider__item-button--orange {
+  background: #FFA724;
 }
