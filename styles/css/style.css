@@ -263,6 +263,9 @@ body {
   border-radius: 30px;
   background-color: #fff;
   text-align: center;
+  min-width: 0;
+  margin: 0 20px;
+  margin-bottom: 80px;
 }
 
 .slider-item__title {
@@ -308,7 +311,7 @@ body {
   font-weight: 400;
   line-height: 29px;
   color: #000;
-  margin-bottom: 24px;
+  margin-bottom: 60px;
 }
 
 .slider-item__skills > p {
@@ -344,4 +347,227 @@ body {
 }
 .slider__item-button--orange {
   background: #FFA724;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.catal__slider {
+  min-width: 0;
+  position: relative;
+  padding: 0 40px;
+}
+
+.catal__slider .slick-slider {
+  display: block;
+}
+
+.catal__slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0px 0px 0px;
+  z-index: 10px;
+  font-size: 0;
+  width: 24px;
+  height: 60px;
+  border: 0;
+}
+
+.catal__slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../../img/main/intro/slider-arrow-l.svg") 0 0/100% no-repeat;
+  z-index: 1;
+}
+
+.catal__slider .slick-arrow.slick-next {
+  background: url("../../img/main/intro/slider-arrow-r.svg") 0 0/100% no-repeat;
+  right: 0;
+}
+
+.title {
+  padding: 60px 0;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 59px;
+  color: #000;
+  text-align: center;
+}
+
+.certific__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+}
+.certific__inner:last-child {
+  margin-right: 0;
+}
+.certific__inner-img {
+  cursor: pointer;
+  margin-bottom: 113px;
+}
+
+.reviews__slider-item {
+  border: 4px solid #018FA3;
+  border-radius: 30px;
+  padding: 30px;
+  display: inline-block;
+}
+
+.reviews__slider-box {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__slider-img {
+  margin-bottom: 12px;
+  margin-right: 20px;
+  height: 80px;
+  width: 80px;
+}
+
+.reviews__slider-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #000;
+}
+
+.reviews__slider {
+  min-width: 0;
+  position: relative;
+  padding: 0 50px;
+  margin-bottom: 80px;
+}
+
+.reviews__slider .slick-slider {
+  display: block;
+}
+
+.reviews__slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0px 0px 0px;
+  z-index: 10px;
+  font-size: 0;
+  width: 24px;
+  height: 60px;
+  border: 0;
+}
+
+.reviews__slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../../img/main/intro/slider-arrow-l.svg") 0 0/100% no-repeat;
+  z-index: 1;
+}
+
+.reviews__slider .slick-arrow.slick-next {
+  background: url("../../img/main/intro/slider-arrow-r.svg") 0 0/100% no-repeat;
+  right: 0;
+}
+
+.reviews__slider {
+  transition: all .3s ease 0s;
+  min-width: 0;
+}
+
+.reviews__slider-item {
+  min-width: 0;
+  margin: 0 10px;
+}
+
+.contact__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 60px;
+}
+
+.contact__item {
+  background: #018FA3;
+  box-shadow: 0px 50px 50px -27px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  display: inline-block;
+  padding: 40px;
+}
+.contact__item-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 59px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact__item-text {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.contact__item-tel {
+  margin-bottom: 20px;
+}
+.contact__item-tel a {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #fff;
+}
+.contact__item-mail a {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #fff;
+}
+.contact__item-address, .contact__item-work {
+  margin-bottom: 20px;
+}
+.contact__item-address p, .contact__item-work p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #fff;
+}
+
+.section__inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+
+#map {
+  width: 794px;
+  height: 539px;
+  border: 20px solid #000000;
+  border-radius: 20px;
+}
+
+.section__footer {
+  background-color: #0A2530;
+  width: 100%;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 200px;
+}
+
+.footer__box-item {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  color: #fff;
+  margin-right: 40px;
+}
+.footer__box-item:last-child {
+  margin-right: 0;
 }
